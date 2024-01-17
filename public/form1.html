@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> INFORMATION FORM </title>
+    </head>
+    <body bgcolor="c8a2c8"> <center>
+
+        <h1> User Information Form</h1>
+        <table border="1px"> <form>
+            <tr>
+                <td><label for="name">Enter Name:</label></td>
+                <td><input type="text" id="name" name="name"required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="username">Enter username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Enter email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Enter Password:</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td> <p>Select your age</p> </td>
+                <td> <input type="radio" id="option 1" name="age" value="0-18">
+                    <label for="option 1">0-18</label><br>
+                    <input type="radio" id="option 2" name="age" value="18-50">
+                    <label for="option 2">18-50</label><br>
+                    <input type="radio" id="option 3" name="age" value="50-80">
+                    <label for="option 3">50-80</label> </td>
+            </tr>
+
+            
+
+            <tr>
+                <td><p>Select your sports</p></td>
+                <td><input type="checkbox" id="s1" name="sports" value="cricket">
+                <label for="s1">cricket</label>
+                <input type="checkbox" id="s2" name="sports" value="badminton">
+                <label for="s2">badminton</label>
+                <input type="checkbox" id="s3" name="sports" value="tennis">
+                <label for="s3">tennis</label></td>
+            </tr>
+
+            <tr>
+                <td><label for="question">sequrity question: </label></td>
+                <td><select name="question" id="question">
+                    <option value="q1">what is your favourite dish? </option>
+                    <option value="q2">what is your pet's name? </option>
+                    <option value="q3">what is your age in 1999? </option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="ans">sequrity answer :</label></td>
+                <td><input type="text" name="ans" id="ans"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="bio">Enter your bio: </label> </td>
+                <td> <textarea name="bio" id="bio" cols="30" rows="10"></textarea> </td>
+            </tr>
+
+            <tr>
+                <td><label for="programming language">select your programming languages: </label></td>
+                <td><select name="programming language" id="programming language" size="6">
+                    <option value="p1">python</option>
+                    <option value="p2">c++</option>
+                    <option value="p3">c</option>
+                    <option value="p4">java</option>
+                    <option value="p5">c#</option>
+                    <option value="p6">ruby</option>
+                    <option value="p7">go</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="submit Form"></td>
+                <td><input type="reset" value="reset form"></td>
+            </tr>
+
+        </form>
+    </table>
+    </center>
+    </body>
+</html>
