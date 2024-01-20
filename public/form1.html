@@ -2,34 +2,69 @@
 <html>
     <head>
         <title> INFORMATION FORM </title>
+        <style>
+            body{
+                background-color: #c8a2c8;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+            }
+            table{
+                border: 1px solid black;
+                background-color:violet;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .left{
+                border: solid black;
+                    border-width: 0px 1px 1px 0px;
+            }
+
+            .right{
+                border: solid black;
+                    border-width: 0px 0px 1px 0px;
+            }
+
+            #lastl{
+                border: solid black;
+                    border-width: 0px 1px 0px 0px;
+                padding-left: 14%;
+            }
+            
+            #lastr{
+                padding-left: 18%;
+            }
+        </style>
     </head>
-    <body bgcolor="c8a2c8"> <center>
+    <body>
 
         <h1> User Information Form</h1>
-        <table border="1px"> <form>
+        <table> <form>
             <tr>
-                <td><label for="name">Enter Name:</label></td>
-                <td><input type="text" id="name" name="name"required></td>
+                <td class="left"><label for="name">Enter Name:</label></td>
+                <td class="right"><input type="text" id="name" name="name"required></td>
             </tr>
             
             <tr>
-                <td><label for="username">Enter username:</label></td>
-                <td><input type="text" id="username" name="username" required></td>
+                <td class="left"><label for="username">Enter username:</label></td>
+                <td class="right"><input type="text" id="username" name="username" required></td>
             </tr>
 
             <tr>
-                <td><label for="email">Enter email:</label></td>
-                <td><input type="email" id="email" name="email" required></td>
+                <td class="left"><label for="email">Enter email:</label></td>
+                <td class="right"><input type="email" id="email" name="email" required></td>
             </tr>
 
             <tr>
-                <td><label for="password">Enter Password:</label></td>
-                <td><input type="password" id="password" name="password"></td>
+                <td class="left"><label for="password">Enter Password:</label></td>
+                <td class="right"><input type="password" id="password" name="password"></td>
             </tr>
 
             <tr>
-                <td> <p>Select your age</p> </td>
-                <td> <input type="radio" id="option 1" name="age" value="0-18">
+                <td class="left"> <p>Select your age</p> </td>
+                <td class="right"> <input type="radio" id="option 1" name="age" value="0-18">
                     <label for="option 1">0-18</label><br>
                     <input type="radio" id="option 2" name="age" value="18-50">
                     <label for="option 2">18-50</label><br>
@@ -40,8 +75,8 @@
             
 
             <tr>
-                <td><p>Select your sports</p></td>
-                <td><input type="checkbox" id="s1" name="sports" value="cricket">
+                <td class="left"><p>Select your sports</p></td>
+                <td class="right"><input type="checkbox" id="s1" name="sports" value="cricket">
                 <label for="s1">cricket</label>
                 <input type="checkbox" id="s2" name="sports" value="badminton">
                 <label for="s2">badminton</label>
@@ -50,8 +85,8 @@
             </tr>
 
             <tr>
-                <td><label for="question">sequrity question: </label></td>
-                <td><select name="question" id="question">
+                <td class="left"><label for="question">security question: </label></td>
+                <td class="right"><select name="question" id="question">
                     <option value="q1">what is your favourite dish? </option>
                     <option value="q2">what is your pet's name? </option>
                     <option value="q3">what is your age in 1999? </option>
@@ -59,18 +94,18 @@
             </tr>
 
             <tr>
-                <td><label for="ans">sequrity answer :</label></td>
-                <td><input type="text" name="ans" id="ans"></td>
+                <td class="left"><label for="ans">security answer :</label></td>
+                <td class="right"><input type="text" name="ans" id="ans"></td>
             </tr>
 
             <tr>
-                <td> <label for="bio">Enter your bio: </label> </td>
-                <td> <textarea name="bio" id="bio" cols="30" rows="10"></textarea> </td>
+                <td class="left"> <label for="bio">Enter your bio: </label> </td>
+                <td class="right"> <textarea name="bio" id="bio" cols="30" rows="10"></textarea> </td>
             </tr>
 
             <tr>
-                <td><label for="programming language">select your programming languages: </label></td>
-                <td><select name="programming language" id="programming language" size="6">
+                <td class="left"><label for="programming language">select your programming languages: </label></td>
+                <td class="right"><select name="programming language" id="programming language" size="6">
                     <option value="p1">python</option>
                     <option value="p2">c++</option>
                     <option value="p3">c</option>
@@ -82,12 +117,11 @@
             </tr>
 
             <tr>
-                <td><input type="submit" value="submit Form"></td>
-                <td><input type="reset" value="reset form"></td>
+                <td id="lastl"><input type="submit" value="submit Form"></td>
+                <td id="lastr"><input type="reset" value="reset form"></td>
             </tr>
 
         </form>
     </table>
-    </center>
     </body>
 </html>
