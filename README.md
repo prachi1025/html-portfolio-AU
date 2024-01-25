@@ -6,4 +6,4 @@ Also this is my first repositry that I created on my own.
 <br>
 This project is a very basic portfolio website thet is developed using only basic HTML tags.
 <br>
-here is a live demo of this project <a href="https://prachi1025.github.io/html-portfolio-AU/'> demo </a>
+here is a live demo of this project [demo]( https://prachi1025.github.io/html-portfolio-AU/)
